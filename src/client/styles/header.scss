@@ -1,0 +1,17 @@
+header {
+    display: flex;
+    padding: 35px;
+    justify-content: center;
+    font-size: 60px;
+    background: #4d8a7e;
+    color: aliceblue;
+}
+
+.logoSize {
+    width: 75px;
+    height: 75px;
+}
+
+.textDeco {
+    text-decoration: dashed underline overline;
+}

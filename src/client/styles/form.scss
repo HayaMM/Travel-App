@@ -1,0 +1,74 @@
+form {
+    border: 5px dashed #dde6e6;
+    border-radius: 3px;
+    padding: 60px;
+    background: #95b4b4;
+}
+
+.center {
+    max-width: 800px;
+    justify-content: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+input[type=text],
+select {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px dotted #5c8980;
+    border-radius: 50px;
+}
+
+input[type=text]:hover {
+    background-color: #E6E6E6;
+    cursor: alias;
+}
+
+input[type=date] {
+    background-color: #afcece;
+    padding: 15px;
+    color: #616c5c;
+    border: none;
+    outline: none;
+    border-radius: 55px;
+    width: 50%;
+}
+
+input[type=date]:hover {
+    background-color: #e6d9d9;
+    cursor: pointer;
+}
+
+#myButton {
+    background-color: #5c8980;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 100%;
+    padding: 20px 30px;
+    margin: auto;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+}
+
+#myButton:hover {
+    background-color: #abe6e6;
+    color: #5e8069;
+    transition: 0.7s;
+    font-size: 20px;
+}
+
+#myButton:focus {
+    outline-color: transparent;
+    outline-style: solid;
+    box-shadow: 0 0 0 4px #5e8069;
+}
+
+#myButton:active {
+    background-color: #393837;
+}

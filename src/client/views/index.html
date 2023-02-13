@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Travel Planner</title>
+    <link rel="shortcut icon" href="https://i.postimg.cc/x1GSPh8J/web-logo.png' border='0' alt='web-logo" />
+</head>
+
+<body>
+
+    <header>
+        <img src="https://i.postimg.cc/x1GSPh8J/web-logo.png' border='0' alt='web-logo" alt="logo" class="logoSize">
+        &nbsp; <h1 class="textDeco">Travel Planner</h1>
+    </header>
+
+    <main>
+        <br />
+        <h2 class="center">Welcome To Travel Planner</h2>
+
+        <section>
+            <form class="center">
+                Going to:
+                <input id="cityTo" type="text" name="input" value="london" placeholder="City you're going to">
+                </br></br>Leaving date:
+                <input id="dateDep" type="date" name="leavingDate" value="2023-02-17" /></br></br>
+                </br>Return date:&nbsp;&nbsp;
+                <input id="dateRet" type="date" name="returngDate" value="2023-02-20" /></br></br>
+                <input id="myButton" type="button" value="Send">
+            </form>
+        </section>
+
+        <section>
+            <!-- API feach -->
+            <img class="center" id='cityPic' width="30%" height="30%" />
+            <div id="cityGoing"></div>
+            <div id="tripDates"></div>
+            <div id="numOfDays"></div>
+            <div id="tripLength"></div></br>
+            <div id="weather"></div>
+            <div id="weatherTemp"></div>
+            </br>
+        </section>
+    </main>
+
+    <footer>
+        <p> Travel Planner <b>&copy;</b> 2023</p>
+    </footer>
+    <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
